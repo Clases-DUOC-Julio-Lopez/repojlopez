@@ -1,7 +1,9 @@
 <?php
 
+include 'Repetir.php';
 
+$numero = new Repetir();
 
-for ($i = 0; $i < 10; $i++) {
-    echo str_repeat("*", $i) . $i . "<br>";
-}
+$numero->setRepeticiones(10);
+
+$numero->mostrar();
